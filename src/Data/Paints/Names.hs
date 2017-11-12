@@ -2,6 +2,8 @@ module Data.Paints.Names where
 
 import Data.Colour.SRGB
 
+-- TODO: Wes Anderson R palettes
+
 alizarinCrimson :: (Ord a, Floating a) => Colour a
 alizarinCrimson = sRGB24 227 38 54
 
@@ -42,6 +44,20 @@ yellowOchre :: (Ord a, Floating a) => Colour a
 yellowOchre = sRGB24 221 153 34
 
 olivine :: (Ord a, Floating a) => Colour a
--- R dark olive green 3
---olivine = sRGB24 162 205 90
 olivine = sRGB24 137 178 67
+
+naplesBlueSpectral :: (Ord a, Floating a) => Colour a
+naplesBlueSpectral = sRGB24 95 174 227
+
+carmine :: (Ord a, Floating a) => Colour a
+carmine = sRGB24 150 0 24
+
+{-indigo :: (Ord a, Floating a) => Colour a
+indigo = sRGB24 75 0 130
+-}
+
+ultramarine :: (Ord a, Floating a) => Colour a
+ultramarine = sRGB24 63 0 255
+
+cobaltGreen :: (Ord a, Floating a) => Colour a
+cobaltGreen = sRGB24 0 124 34
