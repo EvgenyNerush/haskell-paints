@@ -61,3 +61,30 @@ ultramarine = sRGB24 63 0 255
 
 cobaltGreen :: (Ord a, Floating a) => Colour a
 cobaltGreen = sRGB24 0 124 34
+
+cobaltGreenLight :: (Ord a, Floating a) => Colour a
+cobaltGreenLight = sRGB24 0 153 42
+
+cobaltBlue :: (Ord a, Floating a) => Colour a
+cobaltBlue = sRGB24 0 71 171
+
+cadmiumOrange :: (Ord a, Floating a) => Colour a
+cadmiumOrange = sRGB24 237 135 45
+
+cadmiumRed :: (Ord a, Floating a) => Colour a
+cadmiumRed = sRGB24 227 0 34
+
+cadmiumGreen :: (Ord a, Floating a) => Colour a
+cadmiumGreen = sRGB24 0 107 60
+
+cadmiumYellow :: (Ord a, Floating a) => Colour a
+cadmiumYellow = sRGB24 255 246 0
+
+phthalocyanineBlue :: (Ord a, Floating a) => Colour a
+phthalocyanineBlue = sRGB24 28 32 165
+
+chromeYellow :: (Ord a, Floating a) => Colour a
+chromeYellow = sRGB24 255 213 0
+
+minium :: (Ord a, Floating a) => Colour a
+minium = sRGB24 237 114 14

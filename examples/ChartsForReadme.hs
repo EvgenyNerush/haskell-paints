@@ -5,6 +5,7 @@
 import Diagrams.Prelude
 import Diagrams.Backend.Cairo
 import Data.Paints.ColourSets
+import Data.Paints
 
 together :: [Diagram B] -> Diagram B
 together (d:[]) = d
@@ -20,4 +21,4 @@ colorChart' colors = go n n colors
 colorChart :: [Colour Double] -> Diagram B
 colorChart colors = together $ colorChart' colors
 
-main = renderCairo "chartsForReadme.png" (dims $ V2 150 150) $ colorChart set1
+main = renderCairo "chartsForReadme.png" (dims $ V2 200 200) $ colorChart $ sortByLuminance set1
