@@ -88,3 +88,6 @@ chromeYellow = sRGB24 255 213 0
 
 minium :: (Ord a, Floating a) => Colour a
 minium = sRGB24 237 114 14
+
+cobaltViolet :: (Ord a, Floating a) => Colour a
+cobaltViolet = sRGB24 159 66 146
