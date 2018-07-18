@@ -29,7 +29,7 @@ first, pastels first. The sort by a similarity with the given color (like shades
 also possible.  Also, the specially shuffled lists can be obtained, like dark-light-dark-light etc.
 
 The package provides two kinds of getters:
-* for a color matrix, by the matrix coordinates (by pairs of indeces which start from 1),
+* for a color matrix, by the matrix coordinates (by pairs of indeces which start from 0),
 * for a color set, by a single index.
 
 ## Performance...

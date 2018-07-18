@@ -12,3 +12,5 @@ set3 = [chromeYellow, indigo, carmine, cadmiumGreen, cadmiumOrange, cobaltBlue, 
 set4 = [chromeYellow, indigo, carmine, cobaltGreen, alizarinCrimson, cadmiumOrange, cobaltBlue, olivine]
 
 set5 = [chromeYellow, indigo, carmine, cobaltGreenLight, cadmiumRed, cadmiumOrange, cobaltBlue, naplesBlueSpectral]
+
+set6 = [chromeYellow, cadmiumRed, cobaltBlue, cobaltGreenLight]
