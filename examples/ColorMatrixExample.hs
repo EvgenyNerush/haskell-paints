@@ -7,7 +7,7 @@ import Diagrams.Backend.Cairo
 import Data.Paints.ColourSets
 import Data.Paints
 
-cm = ColourMatrix $ reverse $ sortByLuminance set6
+cm = ColourMatrix $ qwe
 
 glue :: (Diagram B -> Diagram B -> Diagram B) -> [Diagram B] -> Diagram B
 glue glueF (d:[]) = d
