@@ -1,4 +1,4 @@
-module Data.Paints where
+module Data.Paints (ColourMatrix, ColourMatrix(..), sortByLuminance, toList, dropEven, dropOdd) where
 
 import Data.Colour
 import Data.Colour.CIE
@@ -8,8 +8,23 @@ data ColourMatrix a = ColourMatrix [Colour a]
 raws :: (Fractional a) => (ColourMatrix a) -> [[Colour a]]
 raws (ColourMatrix cl) = map (\x -> map (blend 0.5 x) cl) cl
 
+-- с повторами
+toListSimple :: (Fractional a) => (ColourMatrix a) -> [Colour a]
+toListSimple cm = foldr (++) [] $ raws cm
+
+-- без повторов, верхний треугольник
 toList :: (Fractional a) => (ColourMatrix a) -> [Colour a]
-toList cm = foldr (++) [] $ raws cm
+toList (ColourMatrix []) = []
+toList (ColourMatrix cl@(x:xs)) = (x:(map (blend 0.5 x) xs)) ++ toList (ColourMatrix xs)
+
+dropEven :: [a] -> [a]
+dropEven [] = []
+dropEven (x:[]) = x:[]
+dropEven (x:y:xs) = x:(dropEven xs)
+
+dropOdd :: [a] -> [a]
+dropOdd [] = []
+dropOdd (x:xs) = dropEven xs
 
 qsort :: Ord a => (b -> a) -> [b] -> [b]
 qsort _ [] = []

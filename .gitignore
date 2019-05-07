@@ -3,3 +3,4 @@ examples/*.hi
 examples/*.o
 examples/ChartsForReadme
 examples/ColorMatrixExample
+examples/*.png

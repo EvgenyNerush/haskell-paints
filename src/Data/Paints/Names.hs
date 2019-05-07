@@ -19,8 +19,8 @@ maize = sRGB24 242 198 73
 marigold :: (Ord a, Floating a) => Colour a
 marigold = sRGB24 234 162 33
 
--- royalBlueWeb :: (Ord a, Floating a) => Colour a
--- royalBlueWeb = sRGB24 65 105 225
+royalBlueWeb :: (Ord a, Floating a) => Colour a
+royalBlueWeb = sRGB24 65 105 225
 
 ashGrey :: (Ord a, Floating a) => Colour a
 ashGrey = sRGB24 178 190 181

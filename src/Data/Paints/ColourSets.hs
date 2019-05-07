@@ -1,4 +1,4 @@
-module Data.Paints.ColourSets where
+module Data.Paints.ColourSets (light_sail) where
 
 import Data.Colour
 import Data.Paints.Names
@@ -34,3 +34,5 @@ warm = [khaki, marigold, cinerous, cadmiumRed]
 qwe0 = [lapisLazuli, maize, ashGrey, taupe, jet, gris, yellowOchre, olivine, carmine, ultramarine, cobaltGreen, cobaltBlue, cadmiumOrange, cadmiumGreen]
 
 oil = [lapisLazuli, maize, cadmiumRed, cobaltGreen]
+
+light_sail = [chromeYellow, cadmiumRed, cobaltGreenLight, naplesBlueSpectral, cobaltViolet]
