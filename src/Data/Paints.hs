@@ -1,4 +1,4 @@
-module Data.Paints (ColourMatrix, ColourMatrix(..), sortByLuminance, toList, dropEven, dropOdd) where
+module Data.Paints (ColourMatrix, ColourMatrix(..), sortByLuminance, toList, dropEven, dropOdd, take3, blend05) where
 
 import Data.Colour
 import Data.Colour.CIE
@@ -35,3 +35,11 @@ qsort measure (head:tail) = qsort measure lhs ++ [head] ++ qsort measure rhs
 
 sortByLuminance :: (Fractional a, Ord a) => [Colour a] -> [Colour a]
 sortByLuminance = qsort luminance
+
+--
+
+blend05 :: (Fractional a, Num a, AffineSpace f) => f a -> f a -> f a 
+blend05 = blend 0.5
+
+take3 :: (Fractional a) => (Colour a, Colour a, Colour a) -> (Colour a, Colour a, Colour a)
+take3 (a, b, c) = (blend05 a b, blend05 b c, blend05 a c)
